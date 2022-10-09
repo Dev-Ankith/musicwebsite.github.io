@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/8c7f34bfd5.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <title>Music Website</title>
+  </head>
+
+  <body>
+    <header>
+      <div class="menu_side">
+        <h1>Playlists</h1>
+        <div class="playlist">
+          <h4 class="active">
+            <span></span><i class="bi bi-music-note-beamed"></i> PlayList
+          </h4>
+          <h4>
+            <span></span><i class="bi bi-music-note-beamed"></i> Recently Played
+          </h4>
+          <h4>
+            <span></span><i class="bi bi-music-note-beamed"></i> Favourites
+          </h4>
+        </div>
+        <div class="menu_song">
+          <li class="songItem">
+            <span>01</span>
+            <img src="img/1.jpg" alt="On My Way" />
+            <h5>
+              On My Way<br />
+              <div class="subtitle">Alan Walker</div>
+            </h5>
+            <i class="bi playListPlay bi-play-circle-fill" id="1"></i>
+          </li>
+          <li class="songItem">
+            <span>02</span>
+            <img src="img/1.jpg" alt="" />
+            <h5>
+              On My Way<br />
+              <div class="subtitle">Alan Walker</div>
+            </h5>
+            <i class="bi playListPlay bi-play-circle-fill" id="2"></i>
+          </li>
+          <li class="songItem">
+            <span>03</span>
+            <img src="img/1.jpg" alt="" />
+            <h5>
+              On My Way<br />
+              <div class="subtitle">Alan Walker</div>
+            </h5>
+            <i class="bi playListPlay bi-play-circle-fill" id="3"></i>
+          </li>
+          <li class="songItem">
+            <span>04</span>
+            <img src="img/1.jpg" alt="" />
+            <h5>
+              On My Way<br />
+              <div class="subtitle">Alan Walker</div>
+            </h5>
+            <i class="bi playListPlay bi-play-circle-fill" id="4"></i>
+          </li>
+          <li class="songItem">
+            <span>05</span>
+            <img src="img/1.jpg" alt="" />
+            <h5>
+              On My Way<br />
+              <div class="subtitle">Alan Walker</div>
+            </h5>
+            <i class="bi playListPlay bi-play-circle-fill" id="5"></i>
+          </li>
+          <li class="songItem">
+            <span>06</span>
+            <img src="img/1.jpg" alt="" />
+            <h5>
+              On My Way<br />
+              <div class="subtitle">Alan Walker</div>
+            </h5>
+            <i class="bi playListPlay bi-play-circle-fill" id="6"></i>
+          </li>
+          <li class="songItem">
+            <span>07</span>
+            <img src="img/1.jpg" alt="" />
+            <h5>
+              On My Way<br />
+              <div class="subtitle">Alan Walker</div>
+            </h5>
+            <i class="bi playListPlay bi-play-circle-fill" id="7"></i>
+          </li>
+          <li class="songItem">
+            <span>08</span>
+            <img src="img/1.jpg" alt="" />
+            <h5>
+              On My Way<br />
+              <div class="subtitle">Alan Walker</div>
+            </h5>
+            <i class="bi playListPlay bi-play-circle-fill" id="8"></i>
+          </li>
+          <li class="songItem">
+            <span>09</span>
+            <img src="img/1.jpg" alt="" />
+            <h5>
+              On My Way<br />
+              <div class="subtitle">Alan Walker</div>
+            </h5>
+            <i class="bi playListPlay bi-play-circle-fill" id="9"></i>
+          </li>
+        </div>
+      </div>
+
+      <div class="song_side" id="song_side_id">
+        <div class="hdr">
+          <div id="slider">
+            <div class="slides">
+              <!-- radio buttons start -->
+              <input type="radio" name="radio-btn" id="radio1" />
+              <input type="radio" name="radio-btn" id="radio2" />
+              <input type="radio" name="radio-btn" id="radio3" />
+              <!-- radio buttons end -->
+              <!-- slide images start-->
+              <div class="slide first">
+                <div class="content1">
+                  <h1 class="fade">Alan Walker</h1>
+                  <p>
+                    Alan Olav Walker is a British-born Norwegian DJ, YouTuber
+                    and record producer primarily known for the critically
+                    acclaimed single "Faded" (2015), which was certified
+                    platinum in 14 countries.
+                  </p>
+                  <div class="buttons1">
+                    <div class="glass1"><a href="#">Listen</a></div>
+                    <div class="glass2"><a href="#">Follow</a></div>
+                  </div>
+                </div>
+                <img src="bg.png" alt="" />
+              </div>
+              <div class="slide">
+                <div class="content2">
+                  <h1>Martin Garrix</h1>
+                  <p>
+                    Martijn Gerard Garritsen, known professionally as Martin
+                    Garrix, is a Dutch DJ and music producer who was ranked
+                    number one on DJ Mag's Top 100 DJs list for three
+                    consecutive years—2016, 2017, and 2018. He is best known for
+                    his singles "Animals", "In the Name of Love" and "Scared to
+                    Be Lonely".
+                  </p>
+                  <div class="buttons2">
+                    <div class="glass3"><a href="#">Listen</a></div>
+                    <div class="glass4"><a href="#">Follow</a></div>
+                  </div>
+                </div>
+                <img src="martin.png" alt="" />
+              </div>
+              <div class="slide">
+                <div class="content3">
+                  <h1>NCS</h1>
+                  <p>
+                    NoCopyrightSounds (NCS) is a British record label that
+                    releases royalty-free electronic dance music. The label was
+                    described by Forbes as "a YouTube-first label that allows
+                    indie creators to use and even monetize its music freely as
+                    long as they give due credit back to the content owners."
+                  </p>
+                  <div class="buttons3">
+                    <div class="glass5"><a href="#">Listen</a></div>
+                    <div class="glass6"><a href="#">Follow</a></div>
+                  </div>
+                </div>
+                <img src="ncs.png" alt="" />
+              </div>
+              <!-- slide images end-->
+              <!-- automatic navigation start -->
+              <div class="navigation-auto">
+                <div class="auto-btn1"></div>
+                <div class="auto-btn2"></div>
+                <div class="auto-btn3"></div>
+              </div>
+              <!-- automatic navigation end -->
+            </div>
+            <!-- manual navigation start-->
+            <div class="navigation-manual">
+              <label for="radio1" class="manual-btn"></label>
+              <label for="radio2" class="manual-btn"></label>
+              <label for="radio3" class="manual-btn"></label>
+            </div>
+            <!-- manual navigation end-->
+          </div>
+          <!-- image slider end -->
+        </div>
+        <div class="popular_songs">
+          <div class="h4">
+            <h4>Popular Songs</h4>
+            <div class="nav">
+              <i class="bi bi-arrow-left-short" id="pop_song_left"></i>
+              <i class="bi bi-arrow-right-short" id="pop_song_right"></i>
+            </div>
+          </div>
+          <div class="pop_song">
+            <li class="songItem">
+              <div class="img_play">
+                <img src="img/2.jpg" alt="" />
+                <div class="play-icon">
+                  <div class="circle" id="10">
+                    <div class="triangle" id="10"></div>
+                  </div>
+                </div>
+              </div>
+              <h5>
+                On My Way<br />
+                <div class="subtitle">Alan Walker</div>
+              </h5>
+            </li>
+            <li class="songItem">
+              <div class="img_play">
+                <img src="img/2.jpg" alt="" />
+                <div class="play-icon">
+                  <div class="circle" id="11">
+                    <div class="triangle" id="11"></div>
+                  </div>
+                </div>
+              </div>
+              <h5>
+                On My Way<br />
+                <div class="subtitle">Alan Walker</div>
+              </h5>
+            </li>
+            <li class="songItem">
+              <div class="img_play">
+                <img src="img/2.jpg" alt="" />
+                <div class="play-icon">
+                  <div class="circle" id="12">
+                    <div class="triangle" id="12"></div>
+                  </div>
+                </div>
+              </div>
+              <h5>
+                On My Way<br />
+                <div class="subtitle">Alan Walker</div>
+              </h5>
+            </li>
+            <li class="songItem">
+              <div class="img_play">
+                <img src="img/2.jpg" alt="" />
+                <div class="play-icon">
+                  <div class="circle" id="13">
+                    <div class="triangle" id="13"></div>
+                  </div>
+                </div>
+              </div>
+              <h5>
+                On My Way<br />
+                <div class="subtitle">Alan Walker</div>
+              </h5>
+            </li>
+            <li class="songItem">
+              <div class="img_play">
+                <img src="img/2.jpg" alt="" />
+                <div class="play-icon">
+                  <div class="circle" id="14">
+                    <div class="triangle" id="14"></div>
+                  </div>
+                </div>
+              </div>
+              <h5>
+                On My Way<br />
+                <div class="subtitle">Alan Walker</div>
+              </h5>
+            </li>
+            <li class="songItem">
+              <div class="img_play">
+                <img src="img/2.jpg" alt="" />
+                <div class="play-icon">
+                  <div class="circle" id="15">
+                    <div class="triangle" id="15"></div>
+                  </div>
+                </div>
+              </div>
+              <h5>
+                On My Way<br />
+                <div class="subtitle">Alan Walker</div>
+              </h5>
+            </li>
+            <li class="songItem">
+              <div class="img_play">
+                <img src="img/2.jpg" alt="" />
+                <div class="play-icon">
+                  <div class="circle" id="16">
+                    <div class="triangle" id="16"></div>
+                  </div>
+                </div>
+              </div>
+              <h5>
+                On My Way<br />
+                <div class="subtitle">Alan Walker</div>
+              </h5>
+            </li>
+            <li class="songItem">
+              <div class="img_play">
+                <img src="img/2.jpg" alt="" />
+                <div class="play-icon">
+                  <div class="circle" id="17">
+                    <div class="triangle" id="17"></div>
+                  </div>
+                </div>
+              </div>
+              <h5>
+                On My Way<br />
+                <div class="subtitle">Alan Walker</div>
+              </h5>
+            </li>
+            <li class="songItem">
+              <div class="img_play">
+                <img src="img/2.jpg" alt="" />
+                <div class="play-icon">
+                  <div class="circle" id="18">
+                    <div class="triangle" id="18"></div>
+                  </div>
+                </div>
+              </div>
+              <h5>
+                On My Way<br />
+                <div class="subtitle">Alan Walker</div>
+              </h5>
+            </li>
+            <li class="songItem">
+              <div class="img_play">
+                <img src="img/2.jpg" alt="" />
+                <div class="play-icon">
+                  <div class="circle" id="19">
+                    <div class="triangle" id="19"></div>
+                  </div>
+                </div>
+              </div>
+              <h5>
+                On My Way<br />
+                <div class="subtitle">Alan Walker</div>
+              </h5>
+            </li>
+            <li class="songItem">
+              <div class="img_play">
+                <img src="img/2.jpg" alt="" />
+                <div class="play-icon">
+                  <div class="circle" id="20">
+                    <div class="triangle" id="20"></div>
+                  </div>
+                </div>
+              </div>
+              <h5>
+                On My Way<br />
+                <div class="subtitle">Alan Walker</div>
+              </h5>
+            </li>
+          </div>
+          <div class="popular_artists">
+            <div class="h4">
+              <h4>Popular Artists</h4>
+              <div class="nav">
+                <i class="bi bi-arrow-left-short" id="pop_art_left"></i>
+                <i class="bi bi-arrow-right-short" id="pop_art_right"></i>
+              </div>
+            </div>
+            <div class="item">
+              <li>
+                <a href="alan.html"><img src="img/alan.jpg" alt="" /></a>
+              </li>
+              <li>
+                <img src="img/alan.jpg" alt="" />
+              </li>
+              <li>
+                <img src="img/alan.jpg" alt="" />
+              </li>
+              <li>
+                <img src="img/alan.jpg" alt="" />
+              </li>
+              <li>
+                <img src="img/alan.jpg" alt="" />
+              </li>
+              <li>
+                <img src="img/alan.jpg" alt="" />
+              </li>
+              <li>
+                <img src="img/alan.jpg" alt="" />
+              </li>
+              <li>
+                <img src="img/alan.jpg" alt="" />
+              </li>
+              <li>
+                <img src="img/alan.jpg" alt="" />
+              </li>
+              <li>
+                <img src="img/alan.jpg" alt="" />
+              </li>
+              <li>
+                <img src="img/alan.jpg" alt="" />
+              </li>
+              <li>
+                <img src="img/alan.jpg" alt="" />
+              </li>
+              <li>
+                <img src="img/alan.jpg" alt="" />
+              </li>
+            </div>
+          </div>
+        </div>
+
+        <script type="text/javascript">
+          var counter = 1;
+          setInterval(function () {
+            document.getElementById("radio" + counter).checked = true;
+            counter++;
+            if (counter > 3) {
+              counter = 1;
+            }
+          }, 5000);
+        </script>
+        <script type="text/javascript">
+          var hdrslider = document.getElementById("slider");
+          var songSide = document.getElementById("song_side_id");
+          document.addEventListener("scroll", function () {
+            const pageOffset = window.pageYOffset / 250;
+            const opacity = +window.pageYOffset / 250 + "";
+            console.log("SCROLLING", 1 - pageOffset, {
+              opacity,
+              pageOffset,
+              offset: window.pageYOffset,
+            });
+          });
+          $(".song_side").scroll(function (event) {
+            let scroll = $(this).scrollTop();
+            let opacity = 1 - scroll / 100;
+            console.log(opacity);
+            if (opacity >= 0) {
+              $("#slider").css("opacity", opacity);
+            }
+          });
+        </script>
+
+        <nav>
+          <ul>
+            <li>Discover <span></span></li>
+            <li>My Library</li>
+            <li>Radio</li>
+          </ul>
+          <!-- <div class="search">
+                    <i class="bi bi-search"></i>
+                    <input type="text" placeholder="Search Here...">
+                </div> -->
+          <div class="search">
+            <input type="text" placeholder="Search" />
+            <a href="">
+              <li class="fas fa-search"></li>
+            </a>
+          </div>
+        </nav>
+      </div>
+
+      <div class="visualizer"></div>
+      <div class="master_play">
+        <img src="img/1.jpg" alt="" id="poster_master_play" />
+        <h5 id="title">
+          Vande Mataram
+          <div class="subtitle">Bankim Chandra</div>
+        </h5>
+        <div class="icon_1">
+          <i class="bi bi-skip-start-fill" id="back"></i>
+        </div>
+        <div class="icon_2">
+          <i class="bi bi-skip-end-fill" id="next"></i>
+        </div>
+        <div class="icon_3">
+          <i class="bi bi-play-fill" id="masterPlay"></i>
+        </div>
+        <div class="icon_4">
+          <i class="bi shuffle bi-music-note-beamed">next</i>
+        </div>
+        <span id="currentStart">0:00</span>
+        <div class="heart-btn">
+          <div class="content">
+            <span class="heart"></span>
+          </div>
+        </div>
+        <div class="progress_area">
+          <div class="progress-bar"></div>
+        </div>
+        <div class="slider-container">
+          <i class="fa-solid fa-volume-high" id="vol_icon"></i>
+          <span class="bar"><span class="fill"></span></span>
+          <input
+            id="slid"
+            class="slider"
+            type="range"
+            min="0"
+            max="100"
+            value="100"
+          />
+        </div>
+        <span id="currentEnd">0:30</span>
+        <div class="wave" id="wave">
+          <div class="wave1"></div>
+          <div class="wave1"></div>
+          <div class="wave1"></div>
+        </div>
+      </div>
+    </header>
+    <script src="app.js"></script>
+    <script>
+      $(document).ready(function () {
+        $(".content").click(function () {
+          $(".content").toggleClass("heart-active");
+          $(".heart").toggleClass("heart-active");
+        });
+      });
+    </script>
+    <body>
+      <html></html>
+    </body>
+  </body>
+</html>
