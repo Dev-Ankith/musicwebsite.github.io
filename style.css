@@ -25,6 +25,8 @@ header {
   /*border: 1px solid #fff;*/
   display: flex;
   flex-wrap: wrap;
+  overflow-y: hidden;
+  overflow-x: hidden;
 }
 
 header .menu_side {
@@ -58,7 +60,24 @@ header .song_side {
 header .visualizer {
   width: 20%;
   height: 90%;
-  background: #0c0f248a;
+  background: #0e101c;
+}
+
+#canvas {
+  position: relative;
+  top: 12cm;
+  width: 100%;
+  border: 1px solid white;
+}
+
+audio {
+  opacity: 0;
+  background-color: white;
+}
+
+#thefile {
+  opacity: 1;
+  background-color: white;
 }
 
 header .master_play {
@@ -1064,7 +1083,7 @@ header .master_play .icon_4 {
 
 header .master_play .icon_4:hover {
   cursor: pointer;
-  color: black;
+  color: rgb(148, 49, 187);
   transition: 0.1s linear;
 }
 
@@ -1206,6 +1225,12 @@ header .master_play .active1 .wave1:nth-child(3) {
   opacity: 1;
 }
 
+.progress_area .hulk {
+  position: absolute;
+  height: 6px;
+  width: 100%;
+}
+
 .slider-container {
   position: relative;
   left: 75%;
@@ -1327,41 +1352,6 @@ header .song_side nav ul li span {
   bottom: -5px;
   border-radius: 20px;
 }
-
-/* header .song_side nav .search {
-    position: absolute;
-    width: 35%;
-    height: 25px;
-    left: 61%;
-    margin-bottom: 32px;
-    padding: 0px 10px;
-    border-radius: 20px;
-    position: absolute;
-    border: 1px solid white;
-}
-
-header .song_side nav .search input {
-    font-size: 15px;
-    background: black;
-    outline: none;
-    border: none;
-}
-
-header .song_side nav .search::before {
-    content: '';
-    position: absolute;
-    width: 50%;
-    height: 102%;
-    right: 50%;
-    background: rgba(82, 77, 77, 0.301);
-    border-radius: 20px;
-    backdrop-filter: blur(2px);
-}
-
-header .song_side nav .search .bi {
-    font-size: 15px;
-    padding: 3px 0px 0px 3px;
-} */
 
 .search {
   margin: 0px 5px;

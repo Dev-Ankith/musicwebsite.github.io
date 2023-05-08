@@ -451,10 +451,6 @@
             <li>My Library</li>
             <li>Radio</li>
           </ul>
-          <!-- <div class="search">
-                    <i class="bi bi-search"></i>
-                    <input type="text" placeholder="Search Here...">
-                </div> -->
           <div class="search">
             <input type="text" placeholder="Search" />
             <a href="">
@@ -464,7 +460,14 @@
         </nav>
       </div>
 
-      <div class="visualizer"></div>
+      <div class="visualizer">
+        <div id="content">
+          <input type="file" id="thefile" accept="audio/*" />
+          <canvas id="canvas"></canvas>
+          <audio id="audio" controls></audio>
+        </div>
+        <script src="visualizer.js"></script>
+      </div>
       <div class="master_play">
         <img src="img/1.jpg" alt="" id="poster_master_play" />
         <h5 id="title">
@@ -481,7 +484,7 @@
           <i class="bi bi-play-fill" id="masterPlay"></i>
         </div>
         <div class="icon_4">
-          <i class="bi shuffle bi-music-note-beamed">next</i>
+          <i class="bi shuffle bi-music-note-beamed">Next</i>
         </div>
         <span id="currentStart">0:00</span>
         <div class="heart-btn">

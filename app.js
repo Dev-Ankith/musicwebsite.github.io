@@ -345,25 +345,25 @@ shuffle.addEventListener("click", () => {
   let a = shuffle.innerHTML;
 
   switch (a) {
-    case "next":
+    case "Next":
       shuffle.classList.add("bi-arrow-repeat");
       shuffle.classList.remove("bi-music-note-beamed");
       shuffle.classList.remove("bi-shuffle");
-      shuffle.innerHTML = "repeat";
+      shuffle.innerHTML = "Repeat";
       break;
 
-    case "repeat":
+    case "Repeat":
       shuffle.classList.remove("bi-arrow-repeat");
       shuffle.classList.remove("bi-music-note-beamed");
       shuffle.classList.add("bi-shuffle");
-      shuffle.innerHTML = "random";
+      shuffle.innerHTML = "Random";
       break;
 
-    case "random":
+    case "Random":
       shuffle.classList.remove("bi-arrow-repeat");
       shuffle.classList.add("bi-music-note-beamed");
       shuffle.classList.remove("bi-shuffle");
-      shuffle.innerHTML = "next";
+      shuffle.innerHTML = "Next";
       break;
   }
 });
